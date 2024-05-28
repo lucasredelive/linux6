@@ -559,7 +559,7 @@
 	status = "okay";
 
 	panel@0 {
-		compatible = "samsung,s6e8aa5x01-ams604rm01";
+		compatible = "mdss,s6e8aa5x01-ams604rm01";
 		reg = <0>;
 		reset-gpios = <&tlmm 50 GPIO_ACTIVE_LOW>;
 		vdd-supply = <&panel_vdd_vci>;
