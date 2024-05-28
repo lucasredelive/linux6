@@ -274,7 +274,7 @@ static void s6e8aa5x01_ams604rm01_remove(struct mipi_dsi_device *dsi)
 
 static const struct of_device_id s6e8aa5x01_ams604rm01_of_match[] = {
 	{ .compatible = "mdss,s6e8aa5x01-ams604rm01" }, // FIXME
-	{ .compatible = "samsung,s6e8aa5x01-ams604rm01" }
+	{ /* sentinel */ }
 };
 MODULE_DEVICE_TABLE(of, s6e8aa5x01_ams604rm01_of_match);
 
