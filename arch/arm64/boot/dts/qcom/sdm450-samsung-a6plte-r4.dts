@@ -444,7 +444,7 @@
 	status = "okay";
 
 	touchscreen@48 {
-		compatible = "samsung,s6sy761";
+		compatible = "zinitix,bt541";
 		reg = <0x48>;
 		interrupts-extended = <&tlmm 59 IRQ_TYPE_EDGE_FALLING>;
 		pinctrl-0 = <&ts_int_default>;
