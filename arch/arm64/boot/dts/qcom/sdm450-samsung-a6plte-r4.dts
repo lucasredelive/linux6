@@ -10,8 +10,8 @@
 /delete-node/ &wcnss_fw_mem;
 
 / {
-	model = "Samsung A6-Plus LTE Rev.4";
-	compatible = "samsung,a6plte", "qcom,sdm450";
+	model = "Samsung J8 LTE HW";
+	compatible = "samsung,j8y18lte", "qcom,sdm450";
 	chassis-type = "handset";
 	qcom,msm-id = <338 0>;
 	qcom,board-id = <8 4>;
@@ -40,10 +40,10 @@
 
 		framebuffer0: framebuffer@90001000 {
 			compatible = "simple-framebuffer";
-			reg = <0 0x90001000 0 (2220 * 1080 * 3)>;
-			width = <1080>;
-			height = <2220>;
-			stride = <(1080 * 3)>;
+			reg = <0 0x90001000 0 (1480 * 720 * 3)>;
+			width = <720>;
+			height = <1480>;
+			stride = <(720 * 3)>;
 			format = "r8g8b8";
 			power-domains = <&gcc MDSS_GDSC>;
 			clocks = <&gcc GCC_MDSS_AHB_CLK>,
@@ -559,7 +559,7 @@
 	status = "okay";
 
 	panel@0 {
-		compatible = "samsung,s6e3fa7-ams604nl01";
+		compatible = "samsung,s6e8aa5x01-ams604rm01";
 		reg = <0>;
 		reset-gpios = <&tlmm 50 GPIO_ACTIVE_LOW>;
 		vdd-supply = <&panel_vdd_vci>;
